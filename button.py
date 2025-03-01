@@ -1,1 +1,1 @@
-"def click(): print('Click')" 
+"def click(): print('Click ')"  
