@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // This checks out the code from the repository.
-                git clone
+                git(url: 'https://github.com/chaib5/MySoftware.git', branch: 'master')
             }
         }
         stage('Run Script') {
