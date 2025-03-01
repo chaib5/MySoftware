@@ -1,0 +1,29 @@
+groovy
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/chaib5/MySoftware.git', branch: 'main'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building the project...'
+                // Ajouter ici les étapes de build spécifiques à ton projet
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                // Ajouter ici les étapes de test si nécessaire
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying project...'
+                // Ajouter ici les étapes de déploiement si nécessaire
+            }
+        }
+    }
+}
