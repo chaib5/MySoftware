@@ -1,0 +1,1 @@
+"def click(): print('Click')" 
